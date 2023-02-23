@@ -12,7 +12,6 @@ const tail = function(array){
 }
 
 
-//TEST CODE
-assertEqual(tail([5,6,7]), 5);
-assertEqual(tail(["Hello", "Lighthouse", "Labs"]), "Hello");
-assertEqual(tail(["Hello", "Lighthouse", "Labs"]), "Helloddd");
+
+
+module.exports = tail;
