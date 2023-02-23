@@ -12,15 +12,6 @@ const map = function (array, callback) {
   return results;
 }
 
-//const results1 = map(words, word => word[0]);
-//console.log(results1);
-
-// const xxx=  function(word)
-// {
-// return word[0];
-// }
-// const results2 = map(words,xxx);
-
 
 const eqArrays = function (a1, a2) {
   for (i = 0; i < a1.length; i++) {

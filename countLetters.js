@@ -1,10 +1,3 @@
-// const assertEqual = function(actual, expected) {
-//   if (actual === expected) {
-//     console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);  
-//   } else {
-//     console.log(`🛑🛑🛑 Assertion Failed: ${actual} != ${expected}`);
-//   }
-// };
 
 const countLetters = function (string) {
   const count = {};
@@ -24,10 +17,3 @@ const countLetters = function (string) {
 console.log(countLetters('LHL'));
 console.log(countLetters('I am learning to code at LHL'));
 
-
-// TEST CODE
-// assertEqual("Lighthouse Labs", "Bootcamp");
-// assertEqual(1, 1);
-// assertEqual("Assert", "Assert");
-// assertEqual("time", "year");
-// assertEqual(100, 101);
