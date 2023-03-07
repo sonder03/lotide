@@ -17,3 +17,6 @@ const countLetters = function (string) {
 console.log(countLetters('LHL'));
 console.log(countLetters('I am learning to code at LHL'));
 
+
+
+module.exports = countLetters

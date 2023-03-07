@@ -1,3 +1,5 @@
+const assertArraysEqual = require('./assertArraysEqual');
+
 const words = ["ground", "control", "to", "major", "tom"];
 
 const map = function (array, callback) {
@@ -12,29 +14,12 @@ const map = function (array, callback) {
   return results;
 }
 
-
-const eqArrays = function (a1, a2) {
-  for (i = 0; i < a1.length; i++) {
-    if (a1[i] !== a2[i]) {
-      return false;
-    }
-  }
-  return true
-};
-
-const assertArraysEqual = function (array1, array2) {
-  var v = eqArrays(array1, array2);
-  if (v === true) {
-    console.log("Arrays are equal")
-  }
-  else {
-    console.log("arrays are not equal")
-  }
-}
-
 assertArraysEqual(map(["sun", "light", "stars"], x => x[2]), ['n', 'g', 'a']);
 assertArraysEqual(map(["sun", "light", "stars"], x => x[0]), ['s', 'g', 'a']);
 assertArraysEqual(map(["sun", "light", "stars"], x => x[0] + x[0] ), ['ss', 'll', 'ss']);
 
 assertArraysEqual(map(["12", "34", "567"], x => x[0] + x[1] ), ['12', '34', '57']);
+
+
+module.exports = map
 

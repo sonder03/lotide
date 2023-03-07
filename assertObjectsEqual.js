@@ -59,3 +59,6 @@ const assertObjectsEqual = function (actual, expected) {
 
 
 assertObjectsEqual({ color: "red", size: "medium" }, { color: "red", size: "medium" });
+
+
+module.exports = assertObjectsEqual
