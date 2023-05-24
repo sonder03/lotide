@@ -7,15 +7,10 @@ const middle = function (array3) {
   }
   for (let i = 0; i < array3.length; i++) {
     sum = sum + array3[i];
-   
+
   }
-  
   return sum / array3.length
 
-  if (array3.length % 2 === 0) {
-    middle = [array3.length / 2 - 1]
-  }
-  else middle = sum
 }
 
 
